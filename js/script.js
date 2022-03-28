@@ -10,13 +10,14 @@
  */
 function calculate() {
   // input
-  const sidea = parseInt(document.getElementById('a-of-triangle').value)
-  const sideb = parseInt(document.getElementById('b-of-triangle').value)
-  const sidec = parseInt(document.getElementById('c-of-triangle').value)
+  const sideleft = parseInt(document.getElementById('sideleft-of-triangle').value)
+  const base = parseInt(document.getElementById('base-of-triangle').value)
+  const sideright = parseInt(document.getElementById('sideright-of-triangle').value)
+  const height = parseInt(document.getElementById('height-of-triangle').value)
 
   // process
-  const area = (a * b) ÷ 2
-  const perimeter = a + b + c
+  const area = (height * base) / 2
+  const perimeter = sideleft + base + sideright
 
   // output
   document.getElementById('area').innerHTML = 'Area is: ' + area + ' cm²'
